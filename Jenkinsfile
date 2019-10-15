@@ -26,7 +26,7 @@ node {
    // -- ETAPA: Test
    // ------------------------------------
    stage 'Test'
-   echo 'Ejecutando tests'
+   echo 'Ejecutando tests...'
    try{
       bat 'mvn verify'
       step([$class: 'JUnitResultArchiver', testResults: '**/target/surefire-reports/TEST-*.xml'])
