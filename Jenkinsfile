@@ -14,7 +14,7 @@ node {
    echo "var env.PATH='${env.PATH}'"
    
    // -- Descarga código desde SCM
-   echo 'Descargando código de SCM'
+   echo 'Descarganding código de SCM'
    bat 'del -rf * /Q'
    checkout scm
    
